@@ -1,0 +1,44 @@
+<html>
+  <!-- add dependencies -->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <script src="./static/lib/backbone.js"></script>
+  <script src="./static/lib/jquery-2.1.3.js"></script>
+  <script src="./static/lib/lodash.js"></script>
+  <!-- the template to be used -->
+  <head>
+    <script type="text/template" id="loc_template">
+      <tr>
+	  <td>
+	    <%= name %>
+	  </td>
+	  <td>
+	    <%= rating %>
+	  </td>
+	  <td>
+	    <button id="b-up" class="pure-button">
+	      ^<!-- might want an image here instead-->
+	    </button>
+	    <button id="b-down" class="pure-button">
+	      v<!-- still want image here-->
+	    </button>
+	  </td>
+	  <td>
+	    <button id="remove" class="pure-button">
+	      Delete
+	    </button>
+	  </td>
+	</tr>
+    </script>
+  </head>
+  
+  <h1>
+    hi this is a view
+  </h1>
+  
+  <body>
+    <table class="pure-table" id="loc-table">
+    </table>
+  </body>
+
+  <script src="./static/app.js"></script>
+</html>
